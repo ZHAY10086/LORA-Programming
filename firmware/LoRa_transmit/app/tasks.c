@@ -168,7 +168,7 @@ void task_lora_test(void)
 
         case MCU_STATE_BR_TX:
             {
-                uart_write("Correctly transmitted!\n");
+//                uart_write("Correctly transmitted!\n");
 //
                 MCU_State = MCU_STATE_UART_WAIT;
                 break;
@@ -195,11 +195,6 @@ void task_lora_test(void)
                 {
                     uart_write("Device found.\n");
                 }
-                else
-                {
-                    uart_write("Device not found.\n");
-                }
-                
                 MCU_State = MCU_STATE_BR_TX;
                 break;
             }
